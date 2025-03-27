@@ -1,0 +1,114 @@
+/* General Styling */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    text-align: center;
+    color: #5a3e2b;
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 50px 20px;
+}
+
+/* Section Styling */
+section {
+    margin: 80px 0;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.5s ease;
+}
+
+/* Unique Section Colors */
+#welcome {
+    background: #fff3cd;
+}
+
+#heart {
+    background: #fce4ec;
+}
+
+#memories {
+    background: #e3f2fd;
+}
+
+#gratitude {
+    background: #e8f5e9;
+}
+
+#wishes {
+    background: #fbe9e7;
+}
+
+/* Header Styles */
+h1 {
+    font-size: 3.5rem;
+    color: #d84315;
+    text-shadow: 3px 3px 8px #ffcc80;
+}
+
+h2 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2.5rem;
+    color: #6a1b9a;
+}
+
+/* Buttons */
+button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background: #6a1b9a;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #8e24aa;
+}
+
+/* Balloons Animation */
+.balloons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.balloon {
+    width: 80px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    animation: floatUp 10s ease-in-out infinite;
+}
+
+.red { background: #ff3b30; left: 10%; animation-delay: 0s; }
+.blue { background: #007aff; left: 40%; animation-delay: 2s; }
+.green { background: #34c759; left: 70%; animation-delay: 4s; }
+.yellow { background: #ffcc00; left: 85%; animation-delay: 6s; }
+
+@keyframes floatUp {
+    0% { transform: translateY(100vh) rotate(0); opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { transform: translateY(-200vh) rotate(360deg); opacity: 0; }
+}
+
+/* Fade In Animation */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    font-weight: bold;
+}
